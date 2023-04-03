@@ -2162,65 +2162,93 @@
               >Please Enter the Verification Code sent to +91</span
             >
             <span class="verfication-no"></span>
-            <span class="changeLink" onclick="backMain(event, false)"
-              >Change</span
+            <span class="changeLink" onclick="changePhoneNo()">Change</span>
+          </div>
+          <div style="font-weight: 600; font-size: 20px">Verification Code</div>
+          <div style="font-weight: 300; margin-top: 15px">
+            Please Enter the Verification Code <br />
+            sent to +91
+            <span class="verfication-no"></span>
+            <span
+              style="color: rgb(61, 99, 235); font-weight: 400; cursor: pointer"
+              class="change-no"
+              onclick="changeNo()"
             >
+              Change
+            </span>
           </div>
-          <div class="inutContainer">
+          <div class="verify-otp-container">
             <input
               class="otpInput"
               maxlength="1"
-              id="_1st_"
-              onkeyup="clickEvent(this, '_2nd_')"
+              id="_1st"
+              onkeyup="clickEvent(this, '_2nd')"
               type="text"
               onkeydown="moveFocusBack(event)"
-              spellcheck="false"
-              data-ms-editor="true"
             />
             <input
               class="otpInput"
               maxlength="1"
-              id="_2nd_"
-              onkeyup="clickEvent(this, '_3rd_')"
+              id="_2nd"
+              onkeyup="clickEvent(this, '_3rd')"
               type="text"
               onkeydown="moveFocusBack(event)"
-              spellcheck="false"
-              data-ms-editor="true"
             />
             <input
               class="otpInput"
               maxlength="1"
-              id="_3rd_"
+              id="_3rd"
               type="text"
-              onkeyup="clickEvent(this, '_4th_')"
+              onkeyup="clickEvent(this, '_4th')"
               onkeydown="moveFocusBack(event)"
-              spellcheck="false"
-              data-ms-editor="true"
             />
             <input
               class="otpInput"
               maxlength="1"
-              id="_4th_"
+              id="_4th"
               type="text"
               onkeydown="moveFocusBack(event)"
-              spellcheck="false"
-              data-ms-editor="true"
             />
           </div>
-          <div class="boxWrapper">
-            <p>Don't receive OTP?</p>
-            <p onclick="sendOtp()" id="resendOtp">Resend OTP</p>
+          <div
+            style="
+              width: 100%;
+              text-align: center;
+              font-weight: 300;
+              margin-top: 25px;
+              cursor: pointer;
+            "
+            onclick="sendOtp()"
+          >
+            Didn't receive OTP?
+          </div>
+          <div
+            style="
+              width: 100%;
+              text-align: center;
+              font-weight: 600;
+              margin-top: 10px;
+              cursor: pointer;
+            "
+            onclick="sendOtp()"
+          >
+            Resend OTP
           </div>
           <button
-            class="otpBbutton"
-            id="otpBbutton2"
-            type="submit"
-            onclick="verfiyOtp()"
-            disabled=""
+            style="
+              width: 100%;
+              padding: 12px 0;
+              border: 0px;
+              cursor: pointer;
+              background-color: #1e3c3c;
+              color: #fff;
+              font-size: 14px;
+              margin-top: 20px;
+            "
+            onclick="verifyOtp()"
           >
             Verify
           </button>
-          <div id="error"></div>
         </form>
         <div class="location" id="location1" onsubmit="return false">
           <div class="locationSection">
