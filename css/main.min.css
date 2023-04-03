@@ -1,0 +1,423 @@
+.iti--separate-dial-code .iti__selected-flag {
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+.desktop-header{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.buttonDiv {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: tilt-shaking 0.3s infinite;
+    margin-right: 20px;
+}
+.buttonDiv .callButton{
+    background-color: #17423B;
+    display: flex;
+    gap: 20px;
+    border-radius: 324px;
+    padding: 8px 12px 8px 12px;
+    align-items: center;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    width: max-content;
+}
+.buttonDiv .callButton a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.buttonDiv .callButton a .phoneNo{
+    border-left: 1px solid lavenderblush;
+    padding-left: 5px;
+}
+.desktop-header .pull-left{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+.desktop-nav ul{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+.desktop-nav ul li a{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    opacity: 1;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: all .3s ease;
+}
+.desktop-nav ul li a:hover{
+    font-weight: 700;
+    color: #000;
+}
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(0eg);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+Collapse
+.phoneCall {
+    display: none;
+}
+
+.otpBbutton:disabled,
+.location button:disabled {
+    cursor: not-allowed !important;
+    background-color: #919191 !important;
+    color: rgba(239, 239, 239, 0.747);
+}
+
+.resendText {
+    font-size: 16px;
+}
+
+.changeLink {
+    color: #298EC7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.changeLink:hover {
+    font-weight: 700;
+}
+
+#location .ThankYou {
+    font-size: 24px;
+}
+
+#location .consentText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+#FooterForm .consentText p,
+#LeadForm .consentText p {
+    color: white !important;
+}
+
+.loading {
+    display: none;
+}
+
+#location p {
+    margin: 0px;
+}
+
+#location {
+    display: none;
+}
+
+#location button img {
+    width: 20px;
+}
+
+#otpVerification {
+    display: none;
+}
+
+#otpVerification .boxWrapper p:last-of-type {
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#otpVerification .boxWrapper p:last-of-type:hover {
+    font-weight: 700;
+}
+
+.otpInput {
+    background-color: white;
+    color: black;
+    border: 1px solid #00000029;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+.floor-plan{
+    width: 100%;
+    height: 1000px;
+}
+.carousel-indicators{
+    bottom: -30px;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #868585;
+}
+.carousel-indicators .active{
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .desktop-header{
+        display: none;
+    }
+    .phoneCall {
+        background-color: #de9e53;
+        border-radius: 50%;
+        padding: 5px 7px 7px 7px;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        margin-right: 50px;
+        margin-bottom: 36px;
+    }
+
+    .phoneCall a {
+        text-decoration: none;
+    }
+}
+
+.innerThankDiv {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+.mainInnerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.mainInner img {
+    height: auto;
+    height: fit-content;
+}
+
+.thankyou {
+    display: flex;
+    align-items: center;
+}
+
+.thankyou p {
+    margin: 10px;
+    font-size: 28px;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+.mainInner {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-section .banner1 {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    .banner-section .banner1 {
+        display: block !important;
+    }
+
+    .banner-section .banner {
+        display: none;
+    }
+}
+
+@media(max-width: 360px) {
+    .thankyou p {
+        font-size: 26px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+}
+
+.firstCapital {
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.enquiry{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #B5B5B5;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    gap: 80px;
+    padding: 80px;
+}
+.section5Header{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: auto;
+    padding-top: 0px !important;
+    gap: 10px;
+}
+.section5Header img{
+    width: 21px;
+    height: 24px;
+}
+.section5Header p{
+    font-family: 'Arvo' !important;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+.enquiryMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.enquirySubMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.enquirySubMain .iti, input:not(.otpInput) {
+    width: 280px;
+    border-radius: 36px;
+    height: 40px;
+    border: none;
+}
+.enquirySubMain .iti, input:not(.otpInput) {
+    width: 280px;
+    border-radius: 36px;
+    height: 40px;
+    border: none;
+}
+.enquirySubMain input{
+    padding: 20px;
+}
+.enquiryMain .boxWrapper {
+    width: fit-content;
+    width: -moz-fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+.enquiryMain .boxWrapper .checkboxWrapper {
+    display: flex;
+    gap: 5px;
+    color: white;
+    align-items: flex-start;
+}
+.checkboxWrapper input[type='checkbox'] {
+    border-radius: 0px !important;
+    cursor: pointer;
+    accent-color: #FFD358;
+    height: 14px !important;
+    width: 14px !important;
+    outline: none !important;
+    border: 1px solid #FFD358;
+    font-size: 10px;
+    margin-top: 2px;
+    transform: scale(1.3);
+}
+.moreText{
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.lessText{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.enquirBbutton{
+    border: none;
+    width: 100%;
+    border-radius: 40px;
+    height: 40px;
+    width: 280px;
+    color: #fff;
+}
+.enquirBbutton:disabled{
+    cursor: not-allowed;
+}
+.otpVerification{
+    display: none;
+}
+.location{
+    display: none;
+}
+@media(max-width: 300px) {
+    .thankyou p {
+        font-size: 24px;
+    }
+
+    .contact {
+        font-size: 16px;
+    }
+}

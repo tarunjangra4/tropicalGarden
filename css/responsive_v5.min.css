@@ -1,0 +1,532 @@
+@media only screen and (max-width:1340px) {
+    .main-header .nav-outer .outer-box {
+        display: none
+    }
+}
+
+@media only screen and (max-width:1139px) {
+    .header-style-two .header-top .top-right {
+        display: none
+    }
+
+    .header-style-two .header-top .top-left {
+        float: right
+    }
+
+    .header-style-two .header-top .top-left .top-info li {
+        margin-left: 15px;
+        margin-right: 0
+    }
+
+    .main-footer .widgets-section:before {
+        display: none
+    }
+
+    .banner-section .slide-item h2 {
+        font-size: 30px;
+        line-height: 1em
+    }
+
+    .room-section .content-column .inner-column {
+        margin-right: 0
+    }
+
+    .about-section .content-column .inner-column {
+        margin-left: 0
+    }
+
+    .about-block .content-column .inner-column,
+    .about-section .image-column .inner-column,
+    .about-section-two .content-column .inner-column,
+    .faqs-section .image-column .inner-column {
+        padding-right: 0
+    }
+
+    .about-block.style-two .content-column .inner-column,
+    .main-footer .form-widget,
+    .room-section .image-column .inner-column {
+        padding-left: 0
+    }
+
+    .main-footer .footer-bottom .inner-container {
+        max-width: 100%
+    }
+
+    .request-form .form-group input[type=email],
+    .request-form .form-group input[type=number],
+    .request-form .form-group input[type=tel],
+    .request-form .form-group input[type=text],
+    .request-form .form-group input[type=url] {
+        border-color: #555
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0
+    }
+
+    .main-footer .form-widget {
+        margin-bottom: 50px
+    }
+
+    .news-block-two .lower-content {
+        padding: 40px 30px 50px
+    }
+
+    .fluid-section-one .feature-column .inner-column {
+        padding: 70px 30px 50px
+    }
+
+    .main-footer .map-widget {
+        max-width: 100%;
+        margin-bottom: 50px;
+        margin-top: 40px
+    }
+
+    .news-block .lower-content {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+
+    .about-section-two .fun-fact-section {
+        margin: 0
+    }
+
+    .about-section-two .fun-fact-section .inner-container {
+        padding: 20px 15px;
+        text-align: center;
+        margin: 0
+    }
+
+    .about-section-two .content-column .inner-column {
+        padding-left: 0
+    }
+
+    .fun-fact-section {
+        text-align: center
+    }
+
+    .fun-fact-section .title-column {
+        margin-bottom: 0
+    }
+
+    .fun-fact-section .title-column .sec-title {
+        padding: 50px 0 0
+    }
+
+    .about-block .content-column .text-box p {
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .main-menu .navigation>li>ul,
+    .main-menu .navigation>li>ul>li>ul {
+        display: block !important;
+        visibility: hidden;
+        opacity: 0
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .sticky-header {
+        display: none !important
+    }
+
+    .main-header {
+        background-color: #f7f5f1
+    }
+
+    .main-header .header-top .inner-container {
+        padding-left: 0
+    }
+
+    .main-header .header-upper .logo-outer {
+        float: left;
+        padding: 0 0;
+        background-color: #f7f5f1
+    }
+
+    .main-header .nav-outer .main-menu {
+        display: none
+    }
+
+    .nav-outer .mobile-nav-toggler {
+        display: block
+    }
+
+    .main-header .header-upper .inner-container:before,
+    .main-header .nav-outer .outer-box,
+    .main-header .upper-right,
+    .main-menu:after,
+    .main-menu:before {
+        display: none
+    }
+
+    .header-style-two {
+        position: relative;
+        padding: 0
+    }
+
+    .header-style-two .nav-outer {
+        width: auto
+    }
+
+    .header-style-two .header-upper .logo-outer {
+        left: -15px;
+        margin: 0;
+        width: auto;
+        background: #fff
+    }
+
+    .header-style-two .header-upper .logo {
+        padding: 16px 15px;
+        margin: 0;
+        width: auto;
+        background: #fff
+    }
+
+    .header-style-two .header-upper .logo:after,
+    .header-style-two .header-upper .logo:before {
+        display: none
+    }
+
+    .header-style-two .main-menu .navigation>li {
+        padding: 47px 0
+    }
+
+    .banner-section .slide-item h2 br {
+        display: none
+    }
+
+    .about-section .counter-column {
+        width: 33.3333%
+    }
+
+    .about-block.style-two .content-column {
+        order: 0
+    }
+
+    .floor-carousel .info-column {
+        margin-bottom: 50px
+    }
+
+    .header-style-two {
+        background-color: #17423b
+    }
+
+    .header-style-two .header-top {
+        display: none
+    }
+
+    .header-style-two .nav-outer .mobile-nav-toggler {
+        margin: 0;
+        color: #fff;
+        padding: 33px 0;
+        font-size: 34px;
+        text-align: center
+    }
+
+    .banner-section-two .slide-item h2 {
+        font-size: 72px;
+        line-height: 1em;
+        margin-top: 0
+    }
+
+    .banner-section-two .slide-item .content-box {
+        height: 750px;
+        padding-bottom: 60px
+    }
+
+    .page-title h1 {
+        font-size: 56px
+    }
+
+    .fluid-section-one .feature-column {
+        width: 100%
+    }
+
+    .fluid-section-one .feature-column .inner-column {
+        max-width: none;
+        padding: 60px 20px 20px
+    }
+
+    .fluid-section-one .image-column {
+        position: relative;
+        float: left;
+        width: 100%;
+        background: 0 0
+    }
+
+    .fluid-section-one .image-column .image-box {
+        display: block
+    }
+
+    .about-section-two .title-box,
+    .about-section-two .title-box .link-box {
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .banner-section .slide-item h2 {
+        font-size: 30px;
+        line-height: 1.1em
+    }
+
+    .banner-section .slide-item .content-box {
+        height: 300px
+    }
+
+    .enquiry-section .slide-item .content-box {
+        height: 700px !important
+    }
+
+    .about-page-section,
+    .gallery-section-two {
+        padding: 70px 0 0
+    }
+
+    .call-to-action,
+    .faqs-section,
+    .floor-section,
+    .map-section,
+    .property-section {
+        padding: 70px 0
+    }
+
+    .about-section-two,
+    .features-section,
+    .main-footer .widgets-section,
+    .room-section {
+        padding: 70px 0 20px
+    }
+
+    .apartments-section,
+    .gallery-page-section,
+    .news-section,
+    .news-section-two {
+        padding: 70px 0 40px
+    }
+
+    .about-section {
+        padding: 70px 0 50px
+    }
+
+    .about-section .content-column .text {
+        margin-bottom: 50px
+    }
+
+    .about-section .counter-column {
+        width: 50%
+    }
+
+    .floor-carousel .image-column {
+        margin-bottom: 30px
+    }
+
+    .news-block .lower-content {
+        padding: 40px 30px 30px
+    }
+
+    .sec-title h2 {
+        font-size: 40px
+    }
+
+    .banner-section-two .slide-item h2 {
+        font-size: 60px;
+        line-height: 1em
+    }
+
+    .fun-fact-section .counter-column .inner {
+        padding: 30px 15px
+    }
+
+    .fun-fact-section .counter-column .inner:before {
+        display: none
+    }
+
+    .fun-fact-section {
+        padding: 40px 0
+    }
+
+    .about-block .image-column {
+        margin-bottom: 0
+    }
+
+    .contact-section {
+        padding-bottom: 70px
+    }
+
+    .map-section .contact-info {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 50px
+    }
+
+    .about-section-two .fun-fact-section .inner-container {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .about-section-two .fun-fact-section .inner-container:before {
+        left: -20px
+    }
+
+    .fun-fact-section .title-column {
+        margin-bottom: 40px
+    }
+
+    .page-title {
+        padding: 100px 0 120px
+    }
+
+    .main-footer {
+        text-align: center
+    }
+
+    .call-to-action .number,
+    .call-to-action .sec-title.light h2 {
+        font-size: 32px
+    }
+
+    .page-title h1 {
+        font-size: 44px
+    }
+}
+
+@media only screen and (max-width:599px) {
+
+    .banner-section-two .slide-item .text br,
+    .main-header .header-top .top-left {
+        display: none
+    }
+
+    .main-header .header-top .top-right {
+        width: 100%;
+        text-align: center;
+        padding-left: 0
+    }
+
+    .enquiry-section .slide-item .content-box {
+        height: 700px !important;
+        padding-bottom: 0 !important
+    }
+
+    .banner-section-two .slide-item .content-box {
+        height: 350px
+    }
+
+    .banner-section .slide-item h2 {
+        font-size: 48px;
+        letter-spacing: .02em
+    }
+
+    .enquiry-section .slide-item h2 {
+        font-size: 20px !important;
+        letter-spacing: .05em !important;
+        line-height: 30px !important
+    }
+
+    .banner-section-two .slide-item h2 {
+        font-size: 42px;
+        line-height: 1.4em
+    }
+
+    .banner-section-two .slide-item .text {
+        font-size: 18px;
+        line-height: 1.4em;
+        text-decoration: none
+    }
+
+    .sec-title h2 {
+        font-size: 40px;
+        line-height: 1em
+    }
+
+    .about-section .counter-column {
+        width: 100%
+    }
+
+    .room-section .content-column {
+        text-align: center
+    }
+
+    .room-section .room-info h5 {
+        padding-right: 0
+    }
+
+    .floor-carousel .text-column p {
+        margin-bottom: 20px
+    }
+
+    .main-footer .footer-bottom .inner-container {
+        padding: 15px 0;
+        text-align: center
+    }
+
+    .main-footer .footer-bottom .social-links {
+        width: 100%
+    }
+
+    .call-to-action .number {
+        font-size: 32px
+    }
+
+    .header-style-two .nav-outer .mobile-nav-toggler {
+        width: auto
+    }
+
+    .page-title h1 {
+        font-size: 36px
+    }
+
+    .default-accordion-box .block .content {
+        padding: 35px 20px 25px
+    }
+
+    .news-block .lower-content {
+        padding: 40px 20px 30px
+    }
+
+    .floor-carousel .text-column .theme-btn {
+        width: 100%;
+        text-align: center
+    }
+
+    .page-title {
+        padding: 80px 0 110px
+    }
+
+    .fluid-section-one {
+        text-align: center
+    }
+
+    .banner-section .slide-item h2,
+    .banner-section-two .slide-item h2,
+    .sec-title h2 {
+        font-size: 22px;
+        margin-bottom: 20px
+    }
+
+    .banner-section .slide-item h4,
+    .banner-section-two .slide-item h4,
+    .sec-title h4 {
+        font-size: 15px;
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .apartment-block .info-box {
+        padding: 10px 5px
+    }
+}
