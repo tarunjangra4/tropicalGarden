@@ -360,7 +360,7 @@
                         <span class="firstCapital">Onwards</span>
                       </h4>
                     </div>
-                    <div class="col-md-5 col-12">
+                    <!-- <div class="col-md-5 col-12">
                       <h3 class="text-white mb-4 mt-2 font-weight-bold">
                         ENQUIRE NOW
                       </h3>
@@ -597,6 +597,218 @@
                               Floor Plan</a
                             >
                           </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <div class="enquiry1">
+                      <form
+                        class="enquiryMain1"
+                        id="enquiryMain1"
+                        onsubmit="return false"
+                        action="javascript:void(0);"
+                        method="POST"
+                      >
+                        <div class="section5Header">
+                          <p class="headerText">ENQUIRE NOW</p>
+                        </div>
+                        <div class="enquirySubMain1">
+                          <input
+                            type="text"
+                            name="name1"
+                            placeholder="Name"
+                            id="name1"
+                            required=""
+                            onchange="check1()"
+                          />
+                          <div>
+                            <input
+                              class="form-input phone1"
+                              id="phone1"
+                              placeholder="Phone"
+                              type="tel"
+                              maxlength="10"
+                              required
+                              onchange="check1()"
+                              oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+                            />
+                            <!-- <span class="phone-validation3 validation3"
+                              >Phone is required</span
+                            > -->
+                          </div>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            id="email1"
+                            required=""
+                            onchange="check1()"
+                          />
+                        </div>
+                        <div class="boxWrapper">
+                          <div class="checkboxWrapper">
+                            <input type="checkbox" checked="checked" />
+                            <div class="lessText">
+                              <span
+                                >I hearby declare that I have read the
+                                consent...</span
+                              ><span
+                                style="cursor: pointer; font-weight: 800"
+                                onclick="readMoretwo(event)"
+                                >Read More</span
+                              >
+                            </div>
+                            <div class="moreText">
+                              I hereby declare that I have read the consent and
+                              I appoint and allow FINCITY to access my credit
+                              information and I/We hereby authorize FINCITY
+                              &amp; its affiliates including banking partners to
+                              call or SMS and/or WhatsApp with reference to my
+                              application or in relation to any of FINCITY
+                              products, notwithstanding anything to the contrary
+                              that may be contained anywhere, including any
+                              registration for DNC/ NDNC.
+                              <span
+                                style="cursor: pointer; font-weight: 800"
+                                id="readLess1"
+                                onclick="readLess1()"
+                                >Read Less</span
+                              >
+                            </div>
+                          </div>
+                          <button
+                            class="enquiryBbutton"
+                            id="enquiryButton1"
+                            type="submit"
+                            disabled=""
+                            onclick="getInfo1()"
+                          >
+                            Get More Information
+                          </button>
+                          <div class="col-12 text-center">
+                            <span class="enquiryStatusStatus"></span>
+                          </div>
+                        </div>
+                      </form>
+                      <form class="otpVerification1" onsubmit="return false">
+                        <div class="section5Header">
+                          <p class="headerText">
+                            <span>Verification Code</span>
+                          </p>
+                        </div>
+                        <div class="resendText">
+                          <span id="numberText1"
+                            >Please Enter the Verification Code sent to
+                            +91</span
+                          >
+                          <span class="verfication-no"></span>
+                          <span class="changeLink" onclick="changePhoneNo()"
+                            >Change</span
+                          >
+                        </div>
+                        <div class="verify-otp-container">
+                          <input
+                            class="otpInput"
+                            maxlength="1"
+                            id="_1st"
+                            onkeyup="clickEvent(this, '_2nd')"
+                            type="text"
+                            onkeydown="moveFocusBack(event)"
+                          />
+                          <input
+                            class="otpInput"
+                            maxlength="1"
+                            id="_2nd"
+                            onkeyup="clickEvent(this, '_3rd')"
+                            type="text"
+                            onkeydown="moveFocusBack(event)"
+                          />
+                          <input
+                            class="otpInput"
+                            maxlength="1"
+                            id="_3rd"
+                            type="text"
+                            onkeyup="clickEvent(this, '_4th')"
+                            onkeydown="moveFocusBack(event)"
+                          />
+                          <input
+                            class="otpInput"
+                            maxlength="1"
+                            id="1_4th"
+                            type="text"
+                            onkeydown="moveFocusBack(event)"
+                          />
+                        </div>
+                        <div
+                          style="
+                            width: 100%;
+                            text-align: center;
+                            font-weight: 300;
+                            margin-top: 25px;
+                            cursor: pointer;
+                          "
+                          onclick="sendOtp()"
+                        >
+                          Didn't receive OTP?
+                        </div>
+                        <div
+                          style="
+                            width: 100%;
+                            text-align: center;
+                            font-weight: 600;
+                            margin-top: 10px;
+                            cursor: pointer;
+                          "
+                          onclick="sendOtp()"
+                        >
+                          Resend OTP
+                        </div>
+                        <button
+                          class="verify-btn"
+                          style="
+                            width: 100%;
+                            padding: 12px 0;
+                            border: 0px;
+                            cursor: pointer;
+                            background-color: #1e3c3c;
+                            color: #fff;
+                            font-size: 14px;
+                            margin-top: 20px;
+                          "
+                          onclick="verfiyOtp(event,1)"
+                        >
+                          Verify
+                        </button>
+                      </form>
+                      <div
+                        class="location"
+                        id="location"
+                        onsubmit="return false"
+                      >
+                        <div class="locationSection">
+                          <div class="consentText">
+                            <p class="ThankYou">Thank You!</p>
+                            <p id="serveBetter">To Serve you better</p>
+                            <p class="shareLocation">
+                              Please Share your Location
+                            </p>
+                          </div>
+                          <button
+                            class="locationButton"
+                            id="locationButton"
+                            type="submit"
+                            onclick="detectLocation(event, false)"
+                          >
+                            <p class="detectText" id="detectText1">
+                              Detect My Location
+                            </p>
+                            <img
+                              src="./images/focus.svg"
+                              alt="located"
+                              class="detect"
+                              id="detect1"
+                            />
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -2065,17 +2277,6 @@
       </footer> -->
 
       <div class="enquiry">
-        <div class="section5Header">
-          <!-- <img
-            src="./images/hashIcon.webp"
-            class="hashIcon"
-            alt="hashIcon"
-            loading="lazy"
-            height="10px"
-            width="24px"
-          /> -->
-          <p class="headerText">ENQUIRE NOW</p>
-        </div>
         <form
           class="enquiryMain"
           id="enquiryMain"
@@ -2083,6 +2284,9 @@
           action="javascript:void(0);"
           method="POST"
         >
+          <div class="section5Header">
+            <p class="headerText">ENQUIRE NOW</p>
+          </div>
           <div class="enquirySubMain">
             <input
               type="text"
@@ -2280,6 +2484,33 @@
     <script>
       var input2 = document.querySelector("#phone3");
       var iti2 = window.intlTelInput(input2, {
+        onlyCountries: [
+          "in",
+          "au",
+          "bt",
+          "br",
+          "ca",
+          "cn",
+          "de",
+          "hk",
+          "it",
+          "jp",
+          "kw",
+          "my",
+          "mv",
+          "np",
+          "QA",
+          "sa",
+          "sg",
+          "lk",
+          "th",
+          "ae",
+        ],
+        preferredCountries: ["in"],
+        separateDialCode: true,
+      });
+      var input1 = document.querySelector("#phone1");
+      var iti1 = window.intlTelInput(input1, {
         onlyCountries: [
           "in",
           "au",
