@@ -119,7 +119,19 @@
     <link href="css/flaticon.min.css" rel="stylesheet" />
     <link href="css/owl.min.css" rel="stylesheet" />
     <link href="css/jquery-ui.min.css" rel="stylesheet" />
-    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <style>
+      .fancybox__slide.has-caption {
+        flex-direction: row;
+      }
+
+      .fancybox__content {
+        max-height: 600px;
+      }
+    </style>
     <link href="css/style_v6.min.css" rel="stylesheet" />
     <link href="css/responsive_v5.min.css" rel="stylesheet" />
     <link href="css/main.min.css" rel="stylesheet" />
@@ -2329,7 +2341,12 @@
       defer
       src=" https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
     ></script>
-    <script defer src="js/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        compact: false,
+      });
+    </script>
     <script defer src="js/mixitup.min.js"></script>
     <script defer src="js/appear.min.js"></script>
     <script defer src="js/owl.min.js"></script>
