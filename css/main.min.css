@@ -425,4 +425,7 @@ Collapse
     .contact {
         font-size: 16px;
     }
+    .enquiryMain{
+        padding: 0;
+    }
 }
