@@ -303,9 +303,7 @@ Collapse
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #B5B5B5;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
+    background-color: #23262B;
     gap: 80px;
     padding: 80px;
 }
@@ -321,12 +319,12 @@ Collapse
     width: 21px;
     height: 24px;
 }
-.section5Header p{
+.section5Header .headerText{
     font-family: 'Arvo' !important;
     font-size: 28px;
     line-height: 34px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     margin: 0;
 }
 .enquiryMain{
