@@ -3,6 +3,8 @@
     border-bottom-left-radius: 30%;
 }
 .desktop-header{
+    position: fixed;
+    width: 100%;
     display: flex;
     background-color: #fff;
     justify-content: space-between;
@@ -339,6 +341,9 @@ Collapse
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+}
+.enquiryMain input::placeholder{
+    color: #DD9E53;
 }
 .enquirySubMain .iti, input:not(.otpInput) {
     width: 280px;
