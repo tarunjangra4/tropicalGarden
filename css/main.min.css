@@ -430,7 +430,7 @@ Collapse
     .enquiry{
         padding: 0;
     }
-    .boxWrapper{
+    .enquiryMain .boxWrapper{
         width: 100%;
     }
 }
