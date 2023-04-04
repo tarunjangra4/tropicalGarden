@@ -343,9 +343,6 @@ Collapse
     gap: 30px;
     flex-wrap: wrap;
 }
-.enquiryMain input::placeholder{
-    color: #DD9E53;
-}
 .enquirySubMain .iti, input:not(.otpInput) {
     width: 280px;
     border-radius: 36px;
