@@ -362,12 +362,11 @@ Collapse
     padding: 20px;
 }
 .enquiryMain .boxWrapper {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    width: 60%;
 }
 .enquiryMain .boxWrapper .checkboxWrapper {
     display: flex;
