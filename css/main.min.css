@@ -110,6 +110,10 @@ Collapse
 
 .resendText {
     font-size: 16px;
+    margin-top: 15px;
+}
+.verify-otp-container{
+    margin-top: 20px;
 }
 
 .changeLink {
@@ -407,6 +411,8 @@ Collapse
 }
 .otpVerification{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 .location{
     display: none;
