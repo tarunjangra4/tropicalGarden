@@ -8,6 +8,7 @@
     display: flex;
     background-color: #fff;
     justify-content: space-between;
+    box-shadow: 0 1px 30px lightgray;
 }
 .buttonDiv {
     display: flex;
