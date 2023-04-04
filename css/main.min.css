@@ -425,6 +425,9 @@ Collapse
     .contact {
         font-size: 16px;
     }
+}
+
+@media(max-width: 767px){
     .enquiry{
         padding: 0;
     }
