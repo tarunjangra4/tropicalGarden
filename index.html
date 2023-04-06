@@ -102,6 +102,21 @@
     </script>
     <!-- Google tag (gtag.js) -->
 
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gh6uuajbpi");
+    </script>
+
     <!-- Stylesheets -->
     <link href="css//bootstrap.min.css" rel="preload" as="style" />
     <link href="css//bootstrap.min.css" rel="stylesheet" />
@@ -143,7 +158,11 @@
       <!-- <div class="preloader"></div> -->
 
       <!-- Header Style Two -->
-      <header class="main-header header-style-two" id="Home">
+      <header
+        style="background-color: #fff"
+        class="main-header header-style-two"
+        id="Home"
+      >
         <!-- Header Top -->
         <div class="header-top">
           <div class="auto-container">
@@ -173,7 +192,7 @@
         <div class="header-upper">
           <div class="auto-container">
             <div class="inner-container clearfix">
-              <span class="bg-shade"></span>
+              <!-- <span class="bg-shade"></span> -->
               <!--Logo-->
               <div class="logo-outer">
                 <div class="logo">
@@ -194,7 +213,7 @@
               <!--Nav Box-->
               <div class="nav-outer clearfix">
                 <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler">
+                <div class="mobile-nav-toggler" style="color: #17423b">
                   <span class="icon"
                     ><span class="line line-one flaticon-minus-symbol"></span
                     ><span class="line line-two flaticon-minus-symbol"></span
@@ -257,21 +276,6 @@
           <!--Right Col-->
           <div class="header-right" style="display: flex">
             <!-- Main Menu -->
-            <div class="buttonDiv">
-              <div class="callButton">
-                <a href="tel:+9195138-85775"
-                  ><img
-                    src="./images/callIcon.svg"
-                    alt="callIcon"
-                    href="tel:+9195138-85775"
-                    loading="lazy"
-                    height="auto"
-                    width="auto"
-                  />
-                  <span class="phoneNo">9513885775</span>
-                </a>
-              </div>
-            </div>
             <nav class="desktop-nav">
               <ul class="">
                 <li>
@@ -302,6 +306,21 @@
                 </li>
               </ul>
             </nav>
+            <div class="buttonDiv">
+              <div class="callButton">
+                <a href="tel:+9195138-85775"
+                  ><img
+                    src="./images/callIcon.svg"
+                    alt="callIcon"
+                    href="tel:+9195138-85775"
+                    loading="lazy"
+                    height="auto"
+                    width="auto"
+                  />
+                  <span class="phoneNo">9513885775</span>
+                </a>
+              </div>
+            </div>
             <!-- Main Menu End-->
           </div>
         </div>
@@ -387,6 +406,7 @@
                   required=""
                   style="padding: 0 15px"
                   onchange="checkNew(event,1)"
+                  onkeyup="inputChange1(event)"
                 />
                 <div>
                   <input
@@ -396,6 +416,7 @@
                     maxlength="10"
                     required
                     onchange="checkNew(event,1)"
+                    onkeyup="inputChange1(event)"
                     oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
                   />
                 </div>
@@ -407,6 +428,7 @@
                   required=""
                   style="padding: 15px"
                   onchange="checkNew(event,1)"
+                  onkeyup="inputChange1(event)"
                 />
               </div>
               <div
@@ -419,9 +441,10 @@
                 "
               >
                 <input
+                  class="checkbox1"
                   style="transform: scale(1)"
                   type="checkbox"
-                  checked="checked"
+                  onclick="inputChange1(event)"
                 />
                 <div
                   class="lessText1"
@@ -1632,12 +1655,9 @@
           role="document"
           style="justify-content: center"
         >
-          <div class="modal-content" style="">
+          <div class="modal-content">
             <div class="modal-header">
-              <img
-                style="height: 100px; width: 65%; margin-left: 17%"
-                src="./images/ModalImage.png"
-              />
+              <img class="modal-image" src="./images/ModalImage.png" />
               <button
                 type="button"
                 class="close"
@@ -1656,12 +1676,6 @@
                 onsubmit="return false"
                 action="javascript:void(0);"
                 method="POST"
-                style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  margin: 10px 0 40px 0;
-                "
               >
                 <p
                   style="
@@ -1690,6 +1704,7 @@
                     required=""
                     style="padding: 0 15px"
                     onchange="checkNew(event,2)"
+                    onkeyup="inputChange2(event)"
                   />
                   <div>
                     <input
@@ -1699,6 +1714,7 @@
                       maxlength="10"
                       required
                       onchange="checkNew(event,2)"
+                      onkeyup="inputChange2(event)"
                       oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
                     />
                   </div>
@@ -1710,6 +1726,7 @@
                     required=""
                     style="padding: 15px"
                     onchange="checkNew(event,2)"
+                    onkeyup="inputChange2(event)"
                   />
                 </div>
                 <div
@@ -1722,9 +1739,10 @@
                   "
                 >
                   <input
+                    class="checkbox2"
                     style="transform: scale(1)"
                     type="checkbox"
-                    checked="checked"
+                    onclick="inputChange2(event)"
                   />
                   <div
                     class="lessText2"
@@ -1917,7 +1935,7 @@
             "
             class="headerText"
           >
-            ENQUIRE NOWs
+            ENQUIRE NOW
           </p>
           <div
             style="display: flex; gap: 25px; align-items: center"
@@ -1931,6 +1949,7 @@
               required=""
               style="padding: 0 15px"
               onchange="checkNew(event,3)"
+              onkeyup="inputChange3(event)"
             />
             <div>
               <input
@@ -1940,6 +1959,7 @@
                 maxlength="10"
                 required
                 onchange="checkNew(event,3)"
+                onkeyup="inputChange3(event)"
                 oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
               />
               <!-- <span class="phone-validation3 validation3"
@@ -1953,10 +1973,15 @@
               id="email"
               required=""
               onchange="checkNew(event,3)"
+              onkeyup="inputChange3(event)"
             />
           </div>
           <div class="checkboxWrapper">
-            <input type="checkbox" checked="checked" />
+            <input
+              class="checkbox"
+              type="checkbox"
+              onclick="inputChange3(event)"
+            />
             <div class="lessText">
               <span>I hearby declare that I have read the consent...</span
               ><span
@@ -2119,9 +2144,9 @@
     <!--End pagewrapper-->
 
     <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target="html">
-      <span class="fa fa-angle-up"></span>
-    </div>
+    <!-- <div class="scroll-to-top scroll-to-target" data-target="html">
+      <a><span class="fa fa-angle-up"></span></a>
+    </div> -->
     <!--Scroll to top-->
 
     <script>
