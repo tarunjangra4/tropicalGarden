@@ -98,7 +98,8 @@
 }
 .modal-content{
     border-radius: 30px; 
-    width: 400px
+    width: 400px;
+    box-shadow: 0 0 3px white;
 }
 .section1{
     background-color: #203835;
